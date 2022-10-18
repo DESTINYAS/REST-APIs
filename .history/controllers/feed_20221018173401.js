@@ -6,7 +6,7 @@ exports.getPost = (req, res, next) => {
 
 exports.creatPosts = (req, res, next) => {
   const errors = validationResult(req);
-  if (!errors.isEmpty()) {
+  if (!errors.isEmpty) {
     return res.status(422).json({
       message: "validation failed, entered data is incorrect",
       errors: errors.array(),

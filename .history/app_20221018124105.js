@@ -1,6 +1,5 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const expressValidator = require("express-validator");
 
 const feedRoutes = require("./routes/feed");
 
@@ -17,6 +16,6 @@ app.use((req, res, next) => {
 
 app.use("/feed", feedRoutes);
 
-app.listen(3000, function () {
-  console.log("server started on port 3000");
+app.listen(2000, function () {
+  console.log("server started on port 2000");
 });

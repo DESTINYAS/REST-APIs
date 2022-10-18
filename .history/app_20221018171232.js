@@ -1,6 +1,5 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const expressValidator = require("express-validator");
 
 const feedRoutes = require("./routes/feed");
 
