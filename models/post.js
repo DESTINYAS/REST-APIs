@@ -9,15 +9,16 @@ const postSchema = new Schema(
     },
     imageUrl: {
       type: String,
-      required: true,
+      required: false,
     },
     content: {
       type: String,
       required: true,
     },
     creator: {
-      type: Object,
-      required: String,
+      type: Schema.Types.ObjectId,
+      ref: "User",
+      required: true,
     },
   },
   { timestamps: true }
